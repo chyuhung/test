@@ -33,8 +33,8 @@ def ConversionRule(num):
 
 def numToStr(num):
     result=""
-    for ch in num:
-        result+=ConversionRule(ch)
+    for char in str(num):
+        result+=ConversionRule(int(char))
     return result
 
 def passwd_cloud(ip):
