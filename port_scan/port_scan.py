@@ -24,8 +24,11 @@ def scan(ip,port):
 if __name__=='__main__':
     with open("log.txt","w") as log_file:
         for line in get_ip_port_List():
-            ip,port=line.split(' ')
-            port=int(port.replace('\n',''))
+            line=line.replace('\n','')
+            line=line.replace('\t',' ')
+            ip=line.split(' ')[0]
+            port=line.split(' ')[-1]
+            port=int(port)
             if scan(ip,port):
                 log_file.write(ip+" "+str(port)+" on\n")
             else:
