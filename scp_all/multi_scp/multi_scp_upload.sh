@@ -1,19 +1,18 @@
 #!/bin/bash  
-#author: yifangyou  
-#create time:2011-05-17  
+
 #用来通过scp批量上传文件或者目录到目标机器的指定目录  
 #配置文件格式：  
 #ssh_hosts=("1.1.1.1" "2.2.2.2")  
 #ssh_ports=("22" "22") 这个可以缺省，缺省值为22,或者个数比ssh_hosts少时，使用缺省值  
-#ssh_users=("root" "root") 这个可以缺省，缺省值为root，,或者个数比ssh_hosts少时，使用缺省值  
-#ssh_passwords=("323" "222") 这个可以缺省，缺省的话需要从命令行输入,或者个数比ssh_hosts少时，使用命令行输入  
+#ssh_users=("cloud" "cloud") 这个可以缺省，缺省值为cloud，,或者个数比ssh_hosts少时，使用缺省值  
+#ssh_passwords=("Lin&shi#31o" "Lin&shi#31o") 这个可以缺省，缺省的话需要从命令行输入,或者个数比ssh_hosts少时，使用命令行输入  
 #执行：sh multi_scp.sh conf_file_path file target  
 if [ -z "$3" ]  
 then 
 echo "sh multi_scp.sh conf_file_path file target";  
 exit;  
 fi  
-default_ssh_user="root" 
+default_ssh_user="cloud" 
 default_ssh_port="22";  
 #upload shell script file path  
 scp_upload=scp_upload.sh  
