@@ -1,0 +1,5 @@
+121.5.56.23 cloud Lin&shi#31o /home/cyh/test/scp_all/test /home/cloud/
+121.5.56.24 cloud Lin&shi#31o /home/cyh/test/scp_all/test /home/cloud/
+121.5.56.25 cloud Lin&shi#31o /home/cyh/test/scp_all/test /home/cloud/
+121.5.56.26 cloud Lin&shi#31o /home/cyh/test/scp_all/test /home/cloud/
+121.5.56.27 cloud Lin&shi#31o /home/cyh/test/scp_all/test /home/cloud/

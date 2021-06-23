@@ -18,7 +18,7 @@ class Host(Thread):
         try:    
             s.connect((self.ip,self.port))
             self.status=True
-        except Exception,e:
+        except Exception as e:
             self.status=False
         s.close()
 
