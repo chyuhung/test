@@ -14,7 +14,7 @@ class RemoteShell(Thread):
         scp_put ='''
         set timeout -1  
         spawn scp %s %s@%s:%s  
-        expect "(yes/no)?" {  
+        expect "yes/no" {  
         send "yes\r"  
         expect "password:"  
         send "%s\r"  
